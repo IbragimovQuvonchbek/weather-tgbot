@@ -5,6 +5,7 @@ name = "pypi"
 
 [packages]
 requests = "*"
+aiogram = "*"
 
 [dev-packages]
 
