@@ -6,7 +6,6 @@ from aiogram.filters import CommandStart
 import asyncio
 import logging
 import sys
-from translate import Translator
 from weather import weather
 from aiogram.types import URLInputFile
 
@@ -15,8 +14,6 @@ load_dotenv()
 TOKEN = getenv('TOKEN')
 
 dp = Dispatcher()
-
-translator = Translator(to_lang='uz', from_lang='en')
 
 
 @dp.message(CommandStart())
